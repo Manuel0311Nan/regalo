@@ -36,11 +36,11 @@ export default function Home() {
           <img src={section.imageUrl} alt={`Imagen de ${section.title}`} style={{ maxWidth: '100%', maxHeight: '300px' }} class="w-96 h-auto" />
           <p class="w-96 text-center ">{section.description}</p>
           {index < 9 ? (
-          <button onClick={goToNextSection} class="text-xl rounded-md bg-blue-500 p-2 mt-2">
+          <button onClick={goToNextSection} class="text-xl text-center rounded-md bg-blue-500 p-2 mt-2">
             Sigue buscando
           </button>
         ) : (
-          <a href="/documents/regaloSilvia.pdf" download="Regalo.pdf" class="text-xl rounded-md bg-blue-500 p-2 w-52">Descargar Virus</a>
+          <a href="/documents/regaloSilvia.pdf" download="Regalo.pdf" class="text-xl text-center rounded-md bg-blue-500 p-2 w-52">Descargar Virus</a>
         )}
         </div>
       ))}
